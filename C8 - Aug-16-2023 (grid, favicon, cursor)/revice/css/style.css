@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.baba {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.abadur {
+    width: 383px;
+    height: 383px;
+    background: url("../images/rahat.jpg");
+    margin: auto;
+    position: relative;
+    border: 2px solid #000;
+    border-bottom-width: 0;
+    border-radius: 9px 9px 0px 0px;
+}
+
+.abadur::before {
+    content: "Abadur Rahman";
+    position: absolute;
+    bottom: -42px;
+    left: -2px;
+    line-height: 40px;
+    width: 100%;
+    background: red;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    -webkit-text-stroke: 1px #333;
+    font-weight: bolder;
+    font-family: 'Barriecito', cursive;
+    font-size: 22px;
+    border: 2px solid #000;
+    border-top-width: 0;
+    border-radius: 0px 0px 9px 9px;
+}
+
+.abadur:hover {
+    background: url("../images/nora.jpg");
+}
+
+.abadur:hover::before {
+    content: "Mrs. Abadur Rahman";
+}

@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url("../images/images-removebg-preview.png"), auto;
+}
+
+.abul {
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.babul {
+    background: cornflowerblue;
+}
+
+.kabul{
+    background: brown;
+}
+
+.bulbul {
+    background: hotpink;
+}
+
+.kamal{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "jm jm bl am" 
+    "tm tm kl am" 
+    "ml ml ll am";
+}
+
+.jamal{
+    background: dodgerblue;
+    grid-area: jm;
+}
+.tomal{
+    background: limegreen;
+    grid-area: tm;
+}
+.akmal{
+    background: orangered;
+    grid-area: am;
+}
+.mal{
+    background: orchid;
+    grid-area: ml;
+}
+.babul{
+    grid-area: bl;
+}
+.kabul{
+    grid-area: kl;
+}
+.bulbul{
+    grid-area: ll;
+}
+
+.kamal > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

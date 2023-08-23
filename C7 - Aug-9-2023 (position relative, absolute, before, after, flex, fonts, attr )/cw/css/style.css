@@ -1,0 +1,141 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Vina+Sans&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: jarina-Normal;
+    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: jarina-Ghartera;
+    src: url("../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: alom;
+    src: url("../fonts/Vina_Sans/VinaSans-Regular.ttf");
+}
+
+.kaka, .kaki {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background: rgba(100, 149, 237, 0.6);
+    position: relative;
+    box-shadow: 0 0 10px #000 inset;
+}
+
+.kaki {
+    margin-top: -60px;
+    margin-left: 30px;
+    background: orangered;
+    z-index: -10;
+}
+
+.kakato-vai {
+    width: 100px;
+    height: 100px;
+    background: hotpink;
+    position: absolute;
+    bottom: 20px;
+    right: -20px;
+    z-index: -50;
+}
+
+.hero {
+    font-size: 24px;
+    position: relative;
+    margin-left: 20px;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background: cornflowerblue;
+}
+
+.hero::after{
+    content: " Alom";
+}
+
+.hero:hover::after{
+    content: attr(salam);
+}
+
+.parent {
+    width: 300px;
+    height: 200px;
+    background: #030;
+    margin: 20px auto;
+    display: flex;
+    border: 2px solid #000;
+}
+
+.chield {
+    width: 130px;
+    height: 130px;
+    background: #f00;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.maa {
+    width: 100%;
+    height: 200px;
+    background: #030;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.shontan {
+    width: 30%;
+    height: 60%;
+    background: #a32;
+}
+
+.main {
+    width: 900px;
+    display: flex;
+    margin: 20px auto;
+}
+
+.main > div:first-child {
+    margin-right: 20px;
+}
+
+.main > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main > div:last-child > p {
+    margin: 20px 0;
+    font-family: jarina-Normal;
+}
+.main > div:last-child > a > button {
+    font-family: alom;
+    font-size: 24px;
+    width: max-content;
+    padding: 8px 26px;
+    border-width: 0;
+    background: dodgerblue;
+    color: #fff;
+    border-radius: 20px/50%;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #000;
+}
+.main > div:last-child > a > button:hover{
+    box-shadow: 6px 6px 6px #000;
+}

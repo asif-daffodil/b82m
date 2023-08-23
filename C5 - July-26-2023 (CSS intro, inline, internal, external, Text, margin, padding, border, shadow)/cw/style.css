@@ -1,0 +1,51 @@
+.taka {
+    font-size: 48px;
+    letter-spacing: 3px;
+    word-spacing: 9px;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: arial;
+    color: limegreen;
+    text-align: center;
+    text-shadow: 3px 3px 3px black;
+    -webkit-text-stroke: 1px blue;
+    text-decoration: line-through overline underline;
+    line-height: 100px;
+    background: red;
+    width: max-content;
+    padding: 20px 30px 40px 50px;
+    margin: auto;
+    margin-top: 90px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px blue, -6px -6px 6px blue, 0px 0px 20px #000 inset;
+}
+
+/* this is comment */
+
+.an {
+    display: inline-block;
+    background: lightblue;
+    width: 200px;
+}
+
+.flag {
+    width: 300px;
+    height: 200px;
+}
+
+.black {
+    width: 100%;
+    height: 33%;
+    background: black;
+}
+.red {
+    width: 100%;
+    height: 34%;
+    background: red;
+}
+.yellow {
+    width: 100%;
+    height: 33%;
+    background: yellow;
+}
