@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="today"></div>
+
+    <script>
+        var today = document.getElementById("today");
+        function personInfo () {
+            this.pFname = "Asif";
+            this.pLname = "Abir";
+            this.pCity = "Dhaka";
+            this.pfullName = function () {
+                return this.pFname + " " + this.pLname;
+            }
+        }
+        var person = new personInfo();
+        // today.innerHTML = person.pfullName();
+
+        function getTime () {
+            var d = new Date();
+            today.innerHTML = d.getDate() + "/" + d.toLocaleString('default', { month: 'long'}) + "/" + d.getFullYear() + " (" + d.toLocaleString('default', { weekday: 'long' }) + ") " + d.toLocaleString('default', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true });
+        }
+
+        setInterval(getTime, 1000);
+    </script>
+</body>
+</html>
