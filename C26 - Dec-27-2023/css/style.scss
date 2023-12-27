@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    width: 900px;
+    margin: 20px auto;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    background: #333;
+    position: relative;
+    li{
+        width: 100%;
+        &:hover{
+            background: #33f;
+        }
+        a{
+            text-decoration: none;
+            line-height: 50px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-family: arial;
+            font-size: 24px;
+            color: #ccc;
+            text-shadow: 1px 1px 1px #00f;
+            display: block;
+        }
+        >div{
+            display: flex;
+            width: 900px;
+            position: absolute;
+            background: #333;
+            left: 0;
+            >ul{
+                width: 100%;
+                list-style: none;
+            }
+        }
+        >.hidden{
+            top: 120%;
+            transition: 0.3s;
+            visibility: hidden;
+        }
+        >.visible{
+            top: 100%;
+            transition: 0.3s;
+            visibility: visible;
+        }
+    }
+}
